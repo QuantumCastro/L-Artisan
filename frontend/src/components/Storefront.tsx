@@ -689,12 +689,17 @@ const Hero = ({ language }: { language: Language }) => {
 
         <div className="w-px h-24 bg-white/70 mx-auto mb-4 shadow-sm" />
 
+        <div className="mx-auto mb-2 flex flex-col items-center justify-center gap-2 animate-bounce md:hidden">
+          <span className="text-white/80 text-xs tracking-widest uppercase drop-shadow-md">{t.hero.scroll}</span>
+          <div className="w-px h-10 bg-white/60" />
+        </div>
+
         <p className="text-white text-lg font-light max-w-xl mx-auto leading-relaxed drop-shadow-md pb-6">
           {t.hero.subtitle}
         </p>
       </div>
 
-      <div className="absolute bottom-36 left-0 w-full flex flex-col items-center justify-center gap-4 animate-bounce">
+      <div className="absolute bottom-36 left-0 w-full hidden md:flex flex-col items-center justify-center gap-4 animate-bounce">
         <span className="text-white/80 text-xs tracking-widest uppercase drop-shadow-md">{t.hero.scroll}</span>
         <div className="flex flex-col items-center">
           <div className="w-px h-12 bg-white/60" />
